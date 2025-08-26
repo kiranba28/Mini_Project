@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - FreshMart</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="#">FreshMart</a></h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop-banner">
+        <h1>Fresh Products</h1>
+        <div class="shop-controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+            </div>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="products-section">
+        <div class="products-grid">
+            <div class="product-card" data-category="fruits">
+                <img src="E:\om\Images\apple.avif" alt=" Apple">
+                <div class="product-details">
+                    <h3>Apple</h3>
+                    <p class="product-description">Sweet and crispy fresh apples</p>
+                    <p class="price">₹200 / kg</p>
+                    <div class="quantity-selector">
+                      <input type="number" value="1" min="1" max="25" class="qty-input"> <b>Kg</b>  
+                    </div>
+                    <button class="add-to-cart" data-id="1" data-name=" Apple" data-price="200">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="vegetables">
+                <img src="E:\om\Images\Tomato.avif" alt="Tomato">
+                <div class="product-details">
+                    <h3>Tomato</h3>
+                    <p class="product-description">Ripe red tomatoes</p>
+                    <p class="price">₹50 / Kg</p>
+                    <div class="quantity-selector">
+                        <input type="number" value="1" min="1" max="25"  class="qty-input"> <b>Kg</b>
+                    </div>
+                    <button class="add-to-cart" data-id="2" data-name="Tomato" data-price="50">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Vegetables -->
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Carrot.avif" alt="Carrot">
+    <div class="product-details">
+        <h3> Carrot</h3>
+        <p class="product-description">Organic garden carrots</p>
+        <p class="price">₹80 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"> <b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="3" data-name=" Carrot" data-price="80">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Onion.jpg" alt="Onion">
+    <div class="product-details">
+        <h3>Onion</h3>
+        <p class="product-description">Fresh and organic onions</p>
+        <p class="price">₹40 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="4" data-name="Onion" data-price="40">Add to Cart</button>
+    </div>
+</div>
+
+
+<!-- Fruits -->
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Guava.avif" alt="Guava">
+    <div class="product-details">
+        <h3> Guava</h3>
+        <p class="product-description">Aromatic tropical guava</p>
+        <p class="price">₹150 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="5" data-name=" Guava" data-price="150">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Banana.avif" alt="Banana">
+    <div class="product-details">
+        <h3>Banana</h3>
+        <p class="product-description">Ripe yellow bananas</p>
+        <p class="price">₹50 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="6" data-name="Banana" data-price="50">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Oranges.avif" alt="Orange">
+    <div class="product-details">
+        <h3> Orange</h3>
+        <p class="product-description">Sweet and tangy oranges</p>
+        <p class="price">₹150 /Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="15" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="7" data-name="Orange" data-price="150">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Green Chili.avif" alt="Green Chili">
+    <div class="product-details">
+        <h3>Green Chili</h3>
+        <p class="product-description">Spicy and fresh green chilies</p>
+        <p class="price">₹30 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="5" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="8" data-name="Green Chili" data-price="30">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Strawberri.avif" alt="Strawberry">
+    <div class="product-details">
+        <h3> Strawberry</h3>
+        <p class="product-description">Sweet red strawberries</p>
+        <p class="price">₹100 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="9" data-name="Strawberry" data-price="100">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\green grapes.avif" alt=" Green Grapes">
+    <div class="product-details">
+        <h3>Green Grapes</h3>
+        <p class="product-description">Seedless green grapes</p>
+        <p class="price">₹100 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20"  class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="10" data-name="Green Grapes" data-price="100">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Black Grapes.avif" alt="Black Grapes">
+    <div class="product-details">
+        <h3>Black Grapes</h3>
+        <p class="product-description">Juicy and sweet black grapes</p>
+        <p class="price">₹80 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20"  class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="11" data-name="Black Grapes" data-price="80">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\bell pa[ers.avif" alt="Bell Pepper">
+    <div class="product-details">
+        <h3>Bell Peppers</h3>
+        <p class="product-description">Colorful bell peppers</p>
+        <p class="price">₹80 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>kg</b>
+        </div>
+        <button class="add-to-cart" data-id="12" data-name="Bell Pepper" data-price="80">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Mango.avif" alt="Mango">
+    <div class="product-details">
+        <h3> Mango</h3>
+        <p class="product-description">Sweet tropical mango</p>
+        <p class="price">₹120 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="13" data-name=" Mango" data-price="120">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Potato.jpg" alt="Potato">
+    <div class="product-details">
+        <h3> Potato</h3>
+        <p class="product-description">Fresh baking potatoes</p>
+        <p class="price">₹30 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="14" data-name="Potato" data-price="0.99">Add to Cart</button>
+    </div>
+</div>
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Cauliflower.avif" alt="Cauliflower">
+    <div class="product-details">
+        <h3> Cauliflower</h3>
+        <p class="product-description">Snow white cauliflower heads</p>
+        <p class="price">₹50 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="15" data-name=" Cauliflower" data-price="50">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Pineapple.avif" alt="Pineapple">
+    <div class="product-details">
+        <h3>Pineapple</h3>
+        <p class="product-description">Tropical fresh pineapple</p>
+        <p class="price">₹80 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="16" data-name=" Pineapple" data-price="80">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Ginger.avif" alt=" Fresh Ginger">
+    <div class="product-details">
+        <h3>Fresh Ginger</h3>
+        <p class="product-description">Aromatic and fresh ginger</p>
+        <p class="price">₹200/ Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="5" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="17" data-name="Fresh Ginger" data-price="3.99">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Kiwi.avif" alt="Kiwi">
+    <div class="product-details">
+        <h3> Kiwi</h3>
+        <p class="product-description">Sweet and tangy kiwi fruit</p>
+        <p class="price">₹100/ Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="18" data-name="Kiwi" data-price="100">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Garlic.avif" alt="Garlic">
+    <div class="product-details">
+        <h3>Garlic</h3>
+        <p class="product-description">Aromatic and flavorful garlic</p>
+        <p class="price">₹250 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="5" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="19" data-name=" Garlic" data-price="250">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\White Brinjal.avif" alt="White Brinjal">
+    <div class="product-details">
+        <h3>White Brinjal</h3>
+        <p class="product-description">Fresh and tender white brinjal, perfect for curries and fries.</p>
+        <p class="price">₹60 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="20" data-name="White Brinjal" data-price="60">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\green peas.jpg" alt="Peas">
+    <div class="product-details">
+        <h3> Peas</h3>
+        <p class="product-description">Sweet and tender green peas, perfect for cooking.</p>
+        <p class="price">₹80 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="21" data-name="Peas" data-price="80">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Pomegranate.avif" alt="Pomegranate">
+    <div class="product-details">
+        <h3>Pomegranate</h3>
+        <p class="product-description">Juicy and nutritious pomegranates</p>
+        <p class="price">₹200 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="22" data-name="Pomegranate" data-price="200">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Bitter gourd.avif" alt="Bitter Gourd">
+    <div class="product-details">
+        <h3>Bitter Gourd</h3>
+        <p class="product-description"> Great for health-conscious diets</p>
+        <p class="price">₹60 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="23" data-name="Bitter Gourd" data-price="60">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Lemon.avif" alt="Lemon">
+    <div class="product-details">
+        <h3>Lemon</h3>
+        <p class="product-description"> Fresh and juicy lemons.</p>
+        <p class="price">₹50 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="15" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="24" data-name="Lemon" data-price="50">Add to Cart</button>
+    </div>
+</div>
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Ladyfinger.avif" alt="Ladyfinger">
+    <div class="product-details">
+        <h3>Ladyfinger</h3>
+        <p class="product-description">Fresh and tender ladyfinger, perfect for delicious recipes.</p>
+        <p class="price">₹50 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="5" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="25" data-name="Ladyfinger" data-price="50">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Custard Apple.avif" alt="Custard Apple">
+    <div class="product-details">
+        <h3>Custard Apple</h3>
+        <p class="product-description">Sweet and creamy custard apples, rich in nutrients.</p>
+        <p class="price">₹180 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="15" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="26" data-name="Custard Apple" data-price="180">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Jackfruit.avif" alt="Jackfruit">
+    <div class="product-details">
+        <h3>Jackfruit</h3>
+        <p class="product-description">Sweet and fibrous jackfruit, great for various dishes.</p>
+        <p class="price">₹200 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="27" data-name="Jackfruit" data-price="200">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Papaya.avif" alt="Papaya">
+    <div class="product-details">
+        <h3>Papaya</h3>
+        <p class="product-description">Sweet and nutritious papaya, great for digestion and immunity.</p>
+        <p class="price">₹60 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="28" data-name="Papaya" data-price="60">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Pumpkin.avif" alt="Pumpkin">
+    <div class="product-details">
+        <h3>Pumpkin</h3>
+        <p class="product-description">Fresh and nutritious pumpkin, perfect for soups and curries.</p>
+        <p class="price">₹100 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="29" data-name="Pumpkin" data-price="100">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Beetroot.avif" alt="Beetroot">
+    <div class="product-details">
+        <h3>Beetroot</h3>
+        <p class="product-description">Fresh and healthy beetroot, rich in essential nutrients.</p>
+        <p class="price">₹50 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="20" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="30" data-name="Beetroot" data-price="50">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="vegetables">
+    <img src="E:\om\Images\Brinjal.avif" alt="Brinjal">
+    <div class="product-details">
+        <h3>Brinjal</h3>
+        <p class="product-description">Fresh and tender brinjals, perfect for curries and fries.</p>
+        <p class="price">₹60 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="31" data-name="Brinjal" data-price="60">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="product-card" data-category="fruits">
+    <img src="E:\om\Images\Sweet lime.avif" alt="Sweet Lime">
+    <div class="product-details">
+        <h3>Sweet Lime</h3>
+        <p class="product-description">Juicy and refreshing sweet limes, rich in vitamin C.</p>
+        <p class="price">₹180 / Kg</p>
+        <div class="quantity-selector">
+            <input type="number" value="1" min="1" max="10" class="qty-input"><b>Kg</b>
+        </div>
+        <button class="add-to-cart" data-id="32" data-name="Sweet Lime" data-price="180">Add to Cart</button>
+    </div>
+</div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FreshMart. All rights reserved.</p>
+    </footer>
+
+    <script src="Javasript/shop.js"></script>
+</body>
+</html>
